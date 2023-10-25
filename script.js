@@ -37,6 +37,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
 // implement the event for "again" functionality
 document.querySelector('.again').addEventListener('click', function () {
+  const secretNumber = Math.trunc(Math.random() * 20) + 1;
   score = 20;
   highscore = 0;
   document.querySelector('.message').textContent = 'Start guessing...';
