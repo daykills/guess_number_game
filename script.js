@@ -34,3 +34,16 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
+
+// implement the event for "again" functionality
+document.querySelector('.again').addEventListener('click', function () {
+  score = 20;
+  highscore = 0;
+  document.querySelector('.message').textContent = 'Start guessing...';
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').style.width = '15rem';
+  document.querySelector('.score').textContent = score;
+  document.querySelector('.highscore').textContent = highscore;
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('.guess').value = '';
+});
